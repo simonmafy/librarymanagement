@@ -1,8 +1,8 @@
 package sait.bms.problemdomain;
 
 /**
- * The Book class has all the assessor and mutators. It also has helps creates the objects while
- * the books.txt is being scanned into the arraylist. 
+ * The Book class has all the assessor and mutators. It also has helps creates
+ * the objects while the books.txt is being scanned into the arraylist.
  * 
  * @author Simon Ma 562187
  * @version February 13/2020
@@ -15,9 +15,10 @@ public abstract class Book {
 	int total;
 	String publisher;
 	String title;
+
 	public abstract String toPrintFormat();
 
-	public Book(){
+	public Book() {
 
 		ISBN = 0;
 		call = "";
@@ -26,14 +27,11 @@ public abstract class Book {
 		call = "";
 		title = "";
 
-
-
 	}
 
-	public long getISBN(){
+	public long getISBN() {
 		return ISBN;
 	}
-
 
 	public String getCall() {
 		return call;
@@ -42,7 +40,6 @@ public abstract class Book {
 	public String getTitle() {
 		return title;
 	}
-
 
 	public void setAvailable(int setAvailable) {
 		available = setAvailable;
@@ -55,8 +52,5 @@ public abstract class Book {
 	public int getTotal() {
 		return total;
 	}
-
-
-
 
 }
